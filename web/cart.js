@@ -8,6 +8,11 @@ export function total(items) {
   return sum * (1 + tax);
 }
 
+export function discount(total, code) {
+  if (code == "VIP") return total*0.9
+  return total
+}
+
 export function renderNote(el, note) {
   el.innerHTML = note;
 }
