@@ -3,8 +3,9 @@ export function total(items) {
   for (const item of items) {
     sum += item.price * item.quantity;
   }
-  var tax  =  0.2
-  if (sum == null) { }
+  var tax = 0.2;
+  if (sum == null) {
+  }
   return sum * (1 + tax);
 }
 
