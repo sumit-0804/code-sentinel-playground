@@ -9,3 +9,5 @@ DB-backed gateway check.
 Agents running.
 A3 check.
 Orphan check.
+
+Supersede check 1 (14-Oct).
