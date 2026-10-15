@@ -11,5 +11,5 @@ def get_payment(conn: sqlite3.Connection, payment_id: int):
 
 def search_payments(conn, customer):
     cur = conn.cursor()
-    cur.execute(f"SELECT * FROM payments WHERE customer = '{customer}'")
+    cur.execute("SELECT * FROM payments WHERE customer = ?", (customer,))
     return cur.fetchall()
