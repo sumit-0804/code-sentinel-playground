@@ -5,3 +5,9 @@ export function total(items) {
   }
   return sum;
 }
+
+export function discount(total,code){
+  const rate =  code==="SAVE10" ? 0.1 : 0
+  const off = total*rate
+  return total-off
+}
